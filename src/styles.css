@@ -1,0 +1,326 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #888;
+}
+
+.light-mode {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 50px 200px;
+}
+
+.light-mode h1 {
+    color: #007acc;
+}
+
+.light-mode table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.light-mode th,
+.light-mode td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.light-mode th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.light-mode tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.light-mode tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.light-mode td button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.light-mode td button:hover {
+    background-color: #d32f2f;
+}
+
+/* Style pour la ligne barrée (line-through) */
+.light-mode tr[style*="line-through"] {
+    color: #888;
+    /* Assombrit le texte barré */
+}
+
+.light-mode label {
+    font-weight: bold;
+    /* Texte en gras pour le label */
+    margin-right: 10px;
+    /* Espace entre le label et le select */
+    font-size: 16px;
+    /* Taille de la police du label */
+    color: #333;
+    /* Couleur du texte du label */
+}
+
+.light-mode select {
+    padding: 8px 12px;
+    /* Espacement intérieur pour le select */
+    border: 1px solid #ccc;
+    /* Bordure du select */
+    border-radius: 4px;
+    /* Coins arrondis pour le select */
+    font-size: 16px;
+    /* Taille de la police du select */
+    color: #333;
+    /* Couleur du texte du select */
+    background-color: #f8f8f8;
+    /* Couleur de fond du select */
+    cursor: pointer;
+    /* Curseur de type pointeur au survol */
+}
+
+
+.light-mode form {
+    display: flex;
+    /* Utilise flexbox pour aligner les éléments */
+    align-items: center;
+    /* Aligne les éléments verticalement au centre */
+    gap: 10px;
+    /* Ajoute un espace entre les éléments */
+    padding: 20px;
+    /* Ajoute un espacement intérieur au formulaire */
+    border: 1px solid #ddd;
+    /* Ajoute une bordure légère */
+    border-radius: 8px;
+    /* Arrondit les coins du formulaire */
+    background-color: #f9f9f9;
+    /* Ajoute une couleur de fond légère */
+}
+
+.light-mode input[type="text"],
+.light-mode select {
+    padding: 10px 15px;
+    /* Espacement intérieur pour l'input et le select */
+    border: 1px solid #ccc;
+    /* Bordure */
+    border-radius: 4px;
+    /* Coins arrondis */
+    font-size: 16px;
+    /* Taille de la police */
+    flex-grow: 1;
+    /* Permet à l'input de prendre l'espace disponible */
+}
+
+.light-mode input[type="text"]:focus,
+.light-mode select:focus {
+    outline: none;
+    /* Supprime la bordure de focus par défaut */
+    border-color: #007bff;
+    /* Change la couleur de la bordure au focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Ajoute une ombre au focus */
+}
+
+.light-mode button[type="submit"] {
+    padding: 10px 20px;
+    /* Espacement intérieur pour le bouton */
+    background-color: #007bff;
+    /* Couleur de fond du bouton */
+    color: white;
+    /* Couleur du texte du bouton */
+    border: none;
+    /* Supprime la bordure du bouton */
+    border-radius: 4px;
+    /* Coins arrondis */
+    font-size: 16px;
+    /* Taille de la police */
+    cursor: pointer;
+    /* Curseur de type pointeur */
+    transition: background-color 0.3s ease;
+    /* Animation de transition pour la couleur de fond */
+}
+
+.light-mode button[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Change la couleur de fond au survol */
+}
+
+/*dark mode*/
+
+.dark-mode {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    /* Fond sombre */
+    color: #e0e0e0;
+    /* Texte clair */
+    margin: 50px 200px;
+}
+
+.dark-mode h1 {
+    color: #03a9f4;
+    /* Bleu clair pour les titres */
+}
+
+.dark-mode table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid #333;
+    /* Bordure plus sombre */
+    padding: 8px;
+    text-align: left;
+}
+
+.dark-mode th {
+    background-color: #333;
+    /* Fond plus sombre pour les en-têtes */
+    font-weight: bold;
+    color: #e0e0e0;
+    /* Texte clair pour les en-têtes */
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #222;
+    /* Lignes paires légèrement plus claires */
+}
+
+.dark-mode tr:hover {
+    background-color: #444;
+    /* Surlignage plus clair au survol */
+    cursor: pointer;
+}
+
+.dark-mode td button {
+    background-color: #d32f2f;
+    /* Rouge plus sombre */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dark-mode td button:hover {
+    background-color: #b71c1c;
+    /* Rouge encore plus sombre au survol */
+}
+
+/* Style pour la ligne barrée (line-through) */
+.dark-mode tr[style*="line-through"] {
+    color: #777;
+    /* Texte barré plus clair */
+}
+
+.dark-mode label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #e0e0e0;
+    /* Texte clair pour les labels */
+}
+
+.dark-mode select {
+    padding: 8px 12px;
+    border: 1px solid #555;
+    /* Bordure plus sombre */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #e0e0e0;
+    /* Texte clair pour le select */
+    background-color: #333;
+    /* Fond plus sombre pour le select */
+    cursor: pointer;
+}
+
+.dark-mode form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #555;
+    /* Bordure plus sombre */
+    border-radius: 8px;
+    background-color: #333;
+    /* Fond plus sombre pour le formulaire */
+}
+
+.dark-mode input[type="text"],
+.dark-mode select {
+    padding: 10px 15px;
+    border: 1px solid #555;
+    /* Bordure plus sombre */
+    border-radius: 4px;
+    font-size: 16px;
+    flex-grow: 1;
+    background-color: #444;
+    /* Fond plus sombre pour les inputs et selects */
+    color: #e0e0e0;
+    /* Texte clair pour les inputs et selects */
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode select:focus {
+    outline: none;
+    border-color: #03a9f4;
+    /* Bordure bleue claire au focus */
+    box-shadow: 0 0 5px rgba(3, 169, 244, 0.5);
+    /* Ombre bleue claire au focus */
+}
+
+.dark-mode button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    /* Bleu clair pour le bouton */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode button[type="submit"]:hover {
+    background-color: #0288d1;
+    /* Bleu légèrement plus sombre au survol */
+}
+
+
+/* Bouton de changement de thème */
+.theme-toggle {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.theme-toggle:hover {
+    background-color: #ffdb4d;
+}

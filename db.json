@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "a966",
+      "title": "Apprendre React",
+      "completed": false,
+      "priority": "haute"
+    },
+    {
+      "id": "78fa",
+      "title": "Finir ma ToDo List",
+      "completed": false,
+      "priority": "moyenne"
+    },
+    {
+      "id": "a7d2",
+      "title": "Boire un café",
+      "completed": false,
+      "priority": "basse"
+    }
+  ]
+}
