@@ -20,3 +20,6 @@ If you are developing a production application, we recommend using TypeScript an
     npm install -g json-server
     json-server --watch db.json --port 5000
     npm i axios
+
+
+# node v22.14.0
