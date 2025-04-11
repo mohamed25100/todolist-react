@@ -3,13 +3,13 @@
     {
       "id": "a966",
       "title": "Apprendre React",
-      "completed": false,
+      "completed": true,
       "priority": "haute"
     },
     {
       "id": "78fa",
       "title": "Finir ma ToDo List",
-      "completed": false,
+      "completed": true,
       "priority": "moyenne"
     },
     {
@@ -17,6 +17,12 @@
       "title": "Boire un café",
       "completed": false,
       "priority": "basse"
+    },
+    {
+      "id": "8191",
+      "title": "azerty",
+      "completed": false,
+      "priority": "haute"
     }
   ]
 }

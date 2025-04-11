@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 const Task = ({ task, onToggle, onDelete }) => {
     return <tr
         onClick={() => onToggle(task.id)}
@@ -8,7 +10,9 @@ const Task = ({ task, onToggle, onDelete }) => {
         <td>{task.completed ? "yes" : "no"}</td>
         <td>{task.priority}</td>
         <td><button onClick={() => onDelete(task.id)}>delete</button></td>
+        <td><NavLink to={`/details/${task.id}`}>Détails du produit</NavLink></td>
     </tr>;
+    
 }
 
 export default Task;
